@@ -67,12 +67,14 @@ import { UpdPrimeNumGenerator } from "./models/updPrimeNumberGenerator";
  * @implements {OnInit}
  */
 export class GeneratorComponent implements OnInit {
-  btnText:string ='Submit!';
+  btnText:string ='Get Score!';
   goalText:number;
   allPrimeList:any[]=[];
   startingNumber:number;
   endingNumber:number;
   primeNumList:Number[];
+  RRScoreList: Number[];
+  customerName :string
 
   constructor() {}
 
@@ -93,6 +95,9 @@ generatePrimes():void {
   let generator:PrimeNumberGenerator = new UpdPrimeNumGenerator();
   //generate primeNumList by given starting and ening number
   this.primeNumList = generator.generate(this.startingNumber,this.endingNumber);
+  this.RRScoreList = generator.customerRRScoreGenerator(this.customerName);
+  this.customerName = null;
+  
 
   if(this.primeNumList.length !==0){
     this.allPrimeList.push(this.primeNumList);

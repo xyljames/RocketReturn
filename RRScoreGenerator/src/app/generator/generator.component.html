@@ -1,10 +1,11 @@
 <div class="container color-dark">
+    <!-- <div><img src="../../assets/images/LOGO.png" alt="LOGO" style="width:30%; height:30%"> </div> -->
 
     <div class="col">
-        <p>Updox Prime Number Generator</p>
+        <p>Rocket Return Score Generator</p>
     </div>
     <div class="colist">
-        <p>Your Prime Number List Item:
+        <p>Customer Scores List:
 
             <b>click item to delete</b>
         </p>
@@ -14,11 +15,13 @@
 <div class="container color-light" [@allPrimeList]='allPrimeList.length'>
 
     <div class="col">
-        <h3>Startig Number</h3>
-        <input type="number" aria-label="number" [(ngModel)]="startingNumber" />
+        <h3>Customer Name Look Up</h3>
+        <input type="text" [(ngModel)]="customerName" />
+        <!-- <input type="text"  /> -->
         <h3>Ending Number</h3>
-        <input type="number" aria-label='number' [(ngModel)]="endingNumber" min="0"/>
-        <p class="sm">generate all the prime number within the range</p>
+        <!-- <input type="number" aria-label='number' [(ngModel)]="endingNumber" min="0"/> -->
+        <!-- <p class="sm">generate all the prime number within the range</p> -->
+        <p class="sm">generate customers RR score</p>
         <form >
             <input type="button" class="btn" value="{{btnText}}" (click)="generatePrimes()">
         </form>

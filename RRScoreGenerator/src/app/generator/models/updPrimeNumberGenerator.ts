@@ -1,5 +1,6 @@
 import { PrimeNumberGenerator } from ".";
 import { Component } from "@angular/core";
+import { mockUpDatas } from "./mockCustomer";
 /**
  * @export
  * @class UpdPrimeNumGenerator
@@ -29,6 +30,15 @@ export class UpdPrimeNumGenerator implements PrimeNumberGenerator{
         }
         return this.newReturnList;
     }
+    
+    customerRRScoreGenerator(name:string):Array<Number>{
+        const data = mockUpDatas;
+        data[0].email = "yilang@test.com"
+        console.log(data[0]);
+        console.log(name)
+        return this.newReturnList;
+    }
+
 /**
  * 
  * @param {number} value 
