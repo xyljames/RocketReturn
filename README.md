@@ -1,15 +1,6 @@
-# PrimeNumberGenetor
+# Rocket Return Customers Score Generator
 
-Angular project that implements a prime number generator which
-returns anlist of all prime numbers in a given range (inclusive of the endpoints).
-
-Live Demo: https://xyljames.github.io/AngularPrimeNumberGenerator/
-
-## Usage
-
-Enter a starting and ending number to generate all the prime number within this range.
-Enter: 2-5(same with 5-2), output: 2,3,5. 
-To click generated item to delete it  from list.
+Live Demo: TBD
 
 ## Folder structure
 
